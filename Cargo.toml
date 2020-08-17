@@ -1,6 +1,6 @@
 [package]
 name = "try_collections"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Sam Westerman <sam@sampersand.me>"]
 edition = "2018"
 publish= true
@@ -12,3 +12,4 @@ keywords = ["fallible", "hashmap", "try", "collections", "result"]
 categories = ["data-structures"]
 
 [dependencies]
+hashbrown = { version = "0.8.2", features = ["raw"] }

@@ -1,7 +1,9 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+#![allow(unused)]
+
+mod try_traits;
+mod map;
+
+pub use try_traits::*;
+pub use map::TryHashMap;
+
+pub type TryReserveError = hashbrown::TryReserveError;
